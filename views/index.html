@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercise Tracker | Free Code Camp</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/dusk/2x/water-bottle.png" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="container">
+    <header><h1><span id="exerciseFont">Personal </br>Exercise</br> Tracker</span> </h1></header>
+    <form  action="/api/exercise/new-user" method="post">
+        <h3>First time working out?</h3>
+        <!--<p><code>POST /api/exercise/new-user</code></p>-->
+        <input id="user-name" type="text" name="username" required="true" placeholder="Enter new username here">
+        <input type="submit" value="Submit">
+    </form>
+
+    <form  action="/api/exercise/add" method="post">
+        <h3>Store your progress</h3>
+        <!--<p><code>POST /api/exercise/add</code></p>-->
+        <input id="user-id" type="text" name="userId" required="true" placeholder='Enter your user ID*'>
+        <input id="exercise-type" type="text" name="description" required="true" placeholder="What kind of exercise?*">
+        <input id="exercise-dur" type="text" name="duration" required="true" placeholder="How long did you work out? (mins.)">
+        <input id="exercise-date" type="text" name="date" placeholder="What is today's date? (yyyy-mm-dd)">
+        <input type="submit" value="Submit">
+    </form>
+    <form action="/api/exercise/user" method="get">
+        <h3>ID Search</h3>
+        <input id="user-lookup" type="text" name="username" required="true" placeholder='Enter your username*'>
+        <input type="submit" value="Submit">
+    </form>
+    <form action="/api/exercise/exercise" method="get">
+        <h3>Show all of your exercise logs</h3>
+        <input id="exercise-user-id" type="text" name="userId" required="true" placeholder='Enter your user ID*'>
+          <input type="submit" value="Submit">
+    </form>
+
+    <form action="/api/exercise/exercise" method="get">
+        <h3>Search for exercises logs</h3>
+        <input id="log-user-id" type="text" name="userId" required="true" placeholder='Enter your user ID*'>
+        <p>Exercise type / Date / # of Logs    (Optional)</p>
+        <input id="log-exercise-type" type="text" name="description"  placeholder="What kind of exercise?">
+
+        <input id="log-exercise-to" type="text" name="todate"  placeholder="Date to search from (yyyy-mm-dd)">
+        <input id="log-exercise-from" type="text" name="fromdate" placeholder="Date to search to (yyyy-mm-dd)">
+        <input id="log-exercise-limit" type="text" name="limit" placeholder="How many logs to return">
+
+        <input type="submit" value="Submit">
+    </form>
+    <div id="all">
+    <form  action="/api/exercise/users" method="get">
+        <h3>Show all Users</h3>
+        <input type="submit" value="Submit">
+    </form>
+    <form  action="/api/exercise/exercises" method="get">
+        <h3>Show all Logs</h3>
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+<footer>Mark Halstead 2019</footer>
+</div>
+</body>
+
+</html>
