@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:900i')
+* {
+    box-sizing: border-box;
+    font-family:"Lato"
+}
+
+body {
+    font-family:sans-serif;
+    margin: 25px;
+    color: #222;
+    background-color: #f5f5f5;
+    z-index:2;
+    background:url("https://images.unsplash.com/photo-1504870712357-65ea720d6078?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80");
+    background-size:cover;
+    position:relative;
+    overflow:scroll;
+    background-attachment:fixed ;
+
+}
+/*body::after{*/
+    /*background-color:rgba(255,255,255,0.5);*/
+    /*z-index:500;*/
+    /*width:100%;*/
+    /*height:100%;*/
+    /*position:relative;*/
+/*}*/
+
+/*body::before{*/
+    /*content:url("https://images.pexels.com/photos/40751/running-runner-long-distance-fitness-40751.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");*/
+  /*width:100%;*/
+    /*top:0;*/
+    /*left:0;*/
+/*height:100%;*/
+    /*opacity:0.3;*/
+    /*z-index:0;*/
+    /*position:absolute;*/
+/*}*/
+/*body::after{*/
+    /*content:"";*/
+    /*width:120vw;*/
+    /*height:120vh;*/
+    /*top: -100px;*/
+    /*left:-25px;*/
+    /*background-color:rgba(100,100,100,0.5);*/
+    /*z-index:1;*/
+    /*position:absolute;*/
+/*}*/
+/*header{*/
+    /*width:100%;*/
+    /*height:50px;*/
+    /*position:absolute;*/
+    /*top:0px;*/
+    /*background-color:white:*/
+    /*z-index:2;*/
+/*}*/
+h1 {
+    color:white;
+    text-shadow:2px 2px 5px grey;
+    font-weight: bold;
+    text-align:center;
+    width:100%;
+    height:30vh;
+    margin:auto auto;
+    z-index:2;
+    font-style:italic;
+    font-size:3.5em;
+}
+#exerciseFont{
+    font-family: 'Roboto', sans-serif;
+    color:black;
+    /*margin:-50px;*/
+    margin:auto auto;
+}
+#exerciseFont:active{
+    margin:-50px;
+}
+.bold {
+    font-weight: bold;
+}
+
+h3{
+
+    color: black;
+    text-shadow:1px 0px 2px rgba(0,0,0,0.24);
+    text-align:center;
+    }
+p {
+    max-width: 900px;
+    text-align:center;
+    margin-right:auto;
+    margin-left:auto;
+    z-index:2;
+    background-color:rgba(255,255,255,0.5);
+    border-radius:1em;
+}
+
+form {
+    margin-bottom: 25px;
+    padding: 30px 60px;
+    background-color: rgba(255,255,255,0.5);
+    display: block;
+    width: 100%;
+    max-width: 340px;
+    border-radius: 15px;
+    margin-right:auto;
+    margin-left:auto;
+    padding-bottom:30px;
+    z-index:2;
+    box-shadow:5px 5px 10px -3px rgba(0,0,0,0.5);
+    transition: box-shadow 200ms ease;
+}
+form:active{
+    box-shadow:2px 2px 5px -1px rgba(0,0,0,0.5)
+}
+
+input {
+    z-index:2;
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+    max-width:330px;
+    height:2rem;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow:inset 0px 1px 5px -1px black;
+    transition: box-shadow 0.2s, font-size 0.1s ease-out,text-indent 0.2s ease-out, color 0.2s;
+}
+input:focus{
+    box-shadow:inset 0px 1px 3px 0px black;
+}
+
+input[type=text]{
+    text-indent:20px;
+    outline:none;
+    background-color:rgb(255,255,255);
+}
+
+input[type=text]:focus{
+    text-indent:2px;
+    background-color: rgb(232, 233, 233);
+}
+
+input[type=submit] {
+    margin:auto;
+    width:30%;
+    font-size: 16px;
+    border-radius: 15px;
+    background-color: rgb(255,255,255);
+    border: 0.2px solid grey;
+    box-shadow: 1px 2px #999, inset 0px 0px black;
+    cursor: pointer;
+    top:0px;
+    right:0px;
+    transition:top 0.05s ease-in,right 0.1s ease-in,background-color 0.15s ease-out,box-shadow 0.01s ease;
+    outline:none;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(212, 213, 213);
+}
+
+input[type=submit]:active{
+    position:relative;
+    right:-0px;
+    top:1px;
+    box-shadow:inset 1px 1px  2px#999, inset 0px 0px 6px #65a0ec;
+    transition:top 0.01s ease-in,right 0.01s ease-in,box-shadow 0.01s linear;
+}
+
+code {
+    font-family: monospace;
+    font-size: 1.2em;
+    background-color: #FFFEC4;
+    padding: 2px;
+    text-align: center;
+}
+/*#uid{*/
+    /*box-shadow:inset 1px 1px 5px -1px black;*/
+/*}*/
+/*#all > form{*/
+    /*padding: 15px 0px;*/
+
+/*}*/
+/*form.works{*/
+    /*background-color:rgba(0,200,0,0.5);)*/
+/*}*/
+footer{
+    color: #fcede9;
+}
